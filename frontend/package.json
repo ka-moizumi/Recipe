@@ -11,6 +11,7 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.3",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "styled-component": "^2.8.0",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26"
   }
 }
