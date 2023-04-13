@@ -22,7 +22,7 @@ export const RecipeRanking = ({ category }: RecipeRankingProps) => {
   //レシピを取得
   const fetchRecipes = async () => {
     const response = await fetch(
-      `https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=1075999937983656266&categoryId=${category}`
+      `https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=${process.env.REACT_APP_RAKUTEN_APP_ID}&categoryId=${category}`
     );
     const data: RecipeResponse = await response.json();
     console.log(data.result);
